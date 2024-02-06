@@ -1,0 +1,106 @@
+body {
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bmw {
+    background-color: #000;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    border: 10px solid gray;
+}
+
+.inner {
+    height: 60%;
+    width: 60%;
+    background-color: #fff;
+    top: 20%;
+    left: 20%;
+    position: relative;
+    border-radius: 100%;
+    animation: rot 7s infinite linear;
+}
+
+.b,
+.m,
+.w {
+    position: absolute;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.b {
+    top: 40px;
+    left: 15%;
+    transform: rotate(310deg);
+}
+
+.m {
+    left: 42%;
+}
+
+.w {
+    left: 71%;
+    top: 48px;
+    font-size: 50px;
+    transform: rotate(50deg);
+}
+
+.s1 {
+    background-color: cyan;
+    height: 48%;
+    width: 48%;
+    border-radius: 100% 0 0;
+}
+
+.s4 {
+    background-color: cyan;
+    height: 48%;
+    width: 48%;
+    bottom: 0;
+
+    right: 0;
+    border-radius: 0 0 100%;
+    position: absolute;
+}
+
+.s3 {
+    background-color: gray;
+    height: 48%;
+    width: 48%;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 0 0 0 100%;
+    position: absolute;
+}
+
+.s2 {
+    background-color: gray;
+    height: 48%;
+    width: 48%;
+
+    position: absolute;
+    border-radius: 0 100% 0 0;
+    top: 0;
+    right: 0;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
